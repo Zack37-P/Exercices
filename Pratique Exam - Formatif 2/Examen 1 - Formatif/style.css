@@ -1,0 +1,17 @@
+#menu li:hover
+{
+    background-color: #15756d;
+    font-size: 1.10em;
+    border-radius: 10px;
+    transform: translate(25%,-25%);
+    
+}
+li
+{
+    transition-duration:400ms;
+}
+
+.texte
+{
+  color : #21b2a6;
+}

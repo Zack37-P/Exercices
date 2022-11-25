@@ -1,0 +1,42 @@
+body {
+    background-color: #f7e4b7;
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+}
+
+#depart {
+    margin-left: 500px;
+    margin-top: 250px;
+
+    grid-template-rows: repeat (5, 1fr);
+    grid-template-columns: repeat (5, 1fr);
+
+    grid-template-areas: 
+    ". . . . ."
+    ". oeilgauche . oeildroit ."
+    ". . nez . ."
+    "jouedroite . . . jouegauche"
+    ". . bouche . .";
+}
+
+#depart > img {
+    display: block;
+    
+}
+
+#texte_css {
+    position: absolute;
+    top: 600px;
+    font-size: 3em;
+}
+
+#oeilgauche
+{
+    grid-area: oeilgauche;
+}
+
+#oeildroit
+{
+    grid-area: oeildroit;
+}
+

@@ -1,0 +1,168 @@
+:root{
+   --bordure-rouge:var(#ca2417);
+   --bordure-grise: var(#d5d5d5);
+   --couleur-texte-description:var(#6f706f);
+   --nom-bière-bas-page:var(hsla(0,0%,100%,.4))
+
+}
+@font-face 
+{
+    font-family: "Faustina" ;
+    src: url("Faustina-Regular.ttf");
+
+    font-family: "Oswald" ;
+    src: url("Oswald-Regular.ttf");
+
+}
+
+@media screen and (max-width:870px) 
+{
+    #box1
+    {
+        display: grid;
+        height: 100%;
+        
+    
+        padding: 50px;
+        grid-template-columns: repeat(1fr,1fr,4fr,1fr,1fr);
+        grid-template-rows: repeat(6,1fr);
+    
+        grid-template-areas: 
+        ". . CI_BOIRE . ."
+        ". . Classique . ."
+        ". . bonne_biere . ."
+        ". . description . ."
+        ". . img img ."
+        ". . img img .";
+     
+        
+        
+    }
+    
+    .align_item
+    {
+       display: flex; 
+       align-items: flex-start;
+    }
+    
+    
+    #img
+    {
+       grid-area: img;
+    }
+    #CI_BOIRE
+    {
+       grid-area: CI_BOIRE;
+    }
+    #classique
+    {
+       grid-area: Classique;
+       font-family: Faustina;
+    }
+    #bonne_biere
+    {
+       grid-area: bonne_biere;
+       font-family: Faustina;
+       font-size: 2em;
+    }
+    #ciboire
+    {
+       grid-area: ciboire;
+       display: flex;
+       font-size: 5em;
+       align-items: center;
+       color: var(--nom-bière-bas-page);
+       display: none;
+    }
+    #description
+    {
+        grid-area: description;
+        font-family: Faustina;
+    }  
+    #disponibilite
+    {
+       grid-area: disponibilite; 
+    }
+}
+
+html body
+{
+    height: 100%;
+    width: 100%;
+    margin:0%
+}
+#container
+{
+    font-family: Oswald;
+    display: flex;
+    justify-content: center;
+    background-image: url(Background.jpg);
+}
+
+
+#box1
+{
+    display: grid;
+    height: 100%;
+    
+
+    
+    grid-template-columns: repeat(1fr,1fr,3fr,1fr,1fr);
+    grid-template-rows: repeat(1fr);
+
+    grid-template-areas: 
+    "img img CI_BOIRE . ."
+    "img img Classique . ."
+    "img img bonne_biere . ."
+    "img img description . ."
+    "img img disponibilite . ."
+    ". . ciboire ciboire .";
+ 
+    align-items: center;
+    
+}
+
+.align_item
+{
+   display: flex; 
+   align-items: flex-start;
+}
+
+
+#img
+{
+   grid-area: img;
+}
+#CI_BOIRE
+{
+   grid-area: CI_BOIRE;
+}
+#classique
+{
+   grid-area: Classique;
+   font-family: Faustina;
+}
+#bonne_biere
+{
+   grid-area: bonne_biere;
+   font-family: Faustina;
+   font-size: 2em;
+}
+#ciboire
+{
+    color: var(--nom-bière-bas-page);
+   grid-area: ciboire;
+   display: flex;
+   font-size: 5em;
+
+}
+#description
+{
+    width: 60%;
+    grid-area: description;
+    font-family: Faustina;
+}
+#disponibilite
+    {
+       grid-area: disponibilite; 
+    }

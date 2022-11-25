@@ -1,0 +1,13 @@
+
+#container
+{ 
+    background-color: rgba(0, 0, 0, 0.282);
+    width: 300px;
+    border: 15px darkblue;
+    padding: 50px;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+

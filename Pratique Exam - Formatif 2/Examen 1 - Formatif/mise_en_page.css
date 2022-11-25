@@ -1,0 +1,61 @@
+html body
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+}
+
+#container
+{
+    background-color:red ;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#box1
+{
+    width: 40%;
+    flex-direction: column;
+    background-color: aquamarine;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+#box2
+{
+    width: 20%;
+    background-color: aqua;
+    align-items: center;
+    margin: 5px;
+}
+
+#box3
+{
+    width: 40%;
+    flex-direction: column;
+    background-color: aquamarine;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.igauche
+{
+    margin-bottom: 20px;
+    align-items: flex-end;
+}
+
+.sigauche
+{
+    margin-bottom: 60px;
+    align-items: flex-end;
+}
+
+#imgsinge
+{
+    display: flex;
+    max-height: 100%;
+    align-items: center;
+    align-content: center;
+}

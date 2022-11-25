@@ -1,0 +1,28 @@
+h1
+{ 
+    color: red;
+    font-size: 3em;
+    text-align: center;
+}
+
+p::first-letter
+{
+    font-style: italic;
+    font-size: 2em;
+}
+p
+{
+    text-align: justify; 
+}
+#allo
+{
+    color: purple;
+}
+#nom
+{
+    color: green 
+}
+a:hover
+{
+    color: aqua;
+}

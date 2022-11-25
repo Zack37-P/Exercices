@@ -1,0 +1,189 @@
+html body
+{
+   height: 100%;
+   width: 100%;
+   margin:0%
+}
+
+#container
+{
+    
+    height: 100%;
+    display: grid;
+    height: 100%;
+
+    grid-template-columns:1fr,5fr,1fr ;
+    grid-template-rows: 1fr,1fr,5fr,1fr,1fr;
+    
+    grid-template-areas: 
+    "Titre Titre Titre"
+    "Stitre Stitre Stitre"
+    ". carnet ."
+    ". . ."
+    "nom JeVote img";
+}
+
+#Titre
+{
+    grid-area: Titre; 
+    display: flex;
+    
+}
+#Stitre
+{
+    grid-area: Stitre; 
+    display: flex;
+    justify-content: center;
+    
+}
+#carnet
+{
+    grid-area: carnet; 
+    
+}
+#JeVote
+{
+    display: flex;
+    grid-area: JeVote; 
+    width: fit-content;
+    height: fit-content;
+    justify-content: center;
+}
+#nom
+{
+    grid-area: nom; 
+    padding-top: 100px;
+    
+}
+#img
+{
+    grid-area: img; 
+    padding-top: 100px;
+}
+
+header
+{
+    justify-content: center; 
+    
+}
+
+
+
+#carnet
+{
+    display: grid;
+   
+    width: 700px;
+    align-items: center;
+
+    
+    grid-template-columns: repeat(3fr, 1fr);
+    grid-template-rows: repeat(12,1fr);
+
+    grid-template-areas: 
+    "Luciana bouton1"
+    "PartiQuebecois ."
+    "Mario bouton2"
+    "QuebecSolidaire ."
+    "Pascale bouton3"
+    "parti ."
+    "Tarek bouton4"
+    "Coalition ."
+    "Eric bouton5"
+    "ClimatQuebec ."
+    "Trystan bouton6"
+    "partiQuebecois .";
+    
+    
+    border-radius: 5px;
+}
+.grid_items
+{
+    display: flex;
+    justify-content: flex-start;
+}
+#Luciana
+{
+   grid-area: Luciana; 
+    border-color: black;
+    border: 1px;
+}
+.bouton1
+{
+   grid-area: bouton1; 
+    
+}
+.bouton2
+{
+   grid-area: bouton2; 
+    
+}
+.bouton3
+{
+    display: flex;
+    justify-content: flex-end;
+   grid-area: bouton3; 
+    width: 1px;
+    height: 2px;
+}
+.bouton
+{
+   grid-area: bouton1; 
+    
+}
+
+#PartiQuebecois
+{
+   grid-area: PartiQuebecois; 
+    
+}
+#Mario
+{
+   grid-area: Mario; 
+    
+}
+#QuebecSolidaire
+{
+   grid-area: QuebecSolidaire; 
+    
+}
+#Pascale
+{
+   grid-area: Pascale; 
+    
+}
+#parti
+{
+   grid-area: parti; 
+    
+}
+#Tarek
+{
+   grid-area: Tarek; 
+    
+}
+#Coalition
+{
+   grid-area: Coalition; 
+    
+}
+#Eric
+{
+   grid-area: Eric; 
+    
+}
+#ClimatQuebec
+{
+   grid-area: ClimatQuebec; 
+    
+}
+#Trystan
+{
+   grid-area: Trystan; 
+    
+}
+#partiQuebecois
+{
+   grid-area: partiQuebecois; 
+    
+}
